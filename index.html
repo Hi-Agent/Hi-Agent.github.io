@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiRL 项目</title>
+    
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter :wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 标题区 -->
+    <h1>Hi-Agent: Hierarchical Vision-Language Agents for Mobile Device Control</h1>
+
+    <!-- 作者区 -->
+    <div class="authors">
+        <sup>1</sup> Zhe Wu, <sup>1</sup> Hongjin Lu, <sup>1</sup> Junliang Xing, <sup>1</sup> Changhao Zhang, <sup>1</sup> Yin Zhu, <sup>1</sup> Kai Li, <br>
+        <sup>2</sup> Yuhao Yang, <sup>2</sup> Kun Shao, <sup>2</sup> Jianye Hao, <sup>2</sup> Jun Wang, <sup>1</sup> Yuanchun Shi 
+    </div>
+
+    <!-- 机构区 -->
+    <div class="affiliations">
+        <sup>1</sup> Tsinghua University, <sup>2</sup> Huawei
+    </div>
+
+    <!-- 资源按钮区 -->
+    <div class="buttons">
+        <a href="#" class="button">📄 Paper</a>
+        <a href="#" class="button">💻 Code</a>
+    </div>
+
+    <!-- Demo 区 -->
+    <h2>Demo</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id " allowfullscreen></iframe>
+    </div>
+
+    <!-- 摘要区 -->
+    <h2>Abstract</h2>
+    <div class="abstract">
+        Building agents capable of seamlessly operating mobile devices has attracted increasing attention. 
+        Vision-Language Models (VLMs) pretrained on large-scale multi-modal datasets have shown promise for this task after post-training. 
+        However, most existing approaches rely on direct state-to-action mappings, which lack structured reasoning and planning, and thus generalize poorly to novel tasks or unseen UI layouts. 
+        This work presents Hi-Agent, a hierarchical vision-language agent that decouples high-level task reasoning from low-level action execution. 
+        The high-level model generates semantic subgoals, while the low-level model executes them via primitive actions. 
+        To enable efficient training, we reformulate multi-step decision-making as a sequence of single-step subgoals and propose a foresight advantage function, which leverages execution feedback from the low-level model to guide high-level optimization. 
+        This design alleviates the path explosion issue encountered by Group Relative Policy Optimization (GRPO) in long-horizon tasks and enables stable, critic-free joint training. 
+    </div>
+
+    <table class="data-table">
+    <thead>
+    <tr>
+      <th rowspan="2">Algorithm</th>
+      <th rowspan="2">Base Model</th>
+      <th rowspan="2">Size</th>
+      <th rowspan="2">Setting</th>
+      <th rowspan="2">Prompt</th>
+      <th colspan="2">AitW General</th>
+      <th colspan="2">AitW Webshop</th>
+    </tr>
+    <tr>
+      <th>Train</th>
+      <th>Test</th>
+      <th>Train</th>
+      <th>Test</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Prompting</td>
+      <td>GPT-4V</td>
+      <td>-</td>
+      <td>Pre-trained</td>
+      <td>Set-of-Marks</td>
+      <td class="score" data-value="10">10</td>
+      <td class="score" data-value="20">20</td>
+      <td class="score" data-value="30">30</td>
+      <td class="score" data-value="40">40</td>
+    </tr>
+    <!-- 其他行数据 -->
+  </tbody>
+</table>
+
+
+</body>
+</html>
